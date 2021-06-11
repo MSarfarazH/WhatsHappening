@@ -27,4 +27,4 @@ var getEvent = function(){
          })
         }
     })
-}
+
