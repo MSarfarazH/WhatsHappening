@@ -1,4 +1,3 @@
-///Authorization
 fetch('https://api.yelp.com/v3/events', {
 method: 'post',
 headers: new Headers({
@@ -28,5 +27,4 @@ var getEvent = function(){
          })
         }
     })
-}
 
