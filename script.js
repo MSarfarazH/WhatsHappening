@@ -1,4 +1,6 @@
 
+console.log("Hello World")
+
 const corsApiUrl = 'https://cors-anywhere.herokuapp.com/'
 
 
@@ -19,19 +21,21 @@ var getEvents = function(){
     .then(response => response.json())
     .then(data => console.log(data));
  }
-/// Google API///
-var getEvent = function(){
-    var apiUrl = 'https://api.yelp.com/v3/events/san-francisco-yelp-10-year-anniversary-celebration'
+// /// Google API///
+// var getEvent = function(){
+//     var apiUrl = 'https://api.yelp.com/v3/events/san-francisco-yelp-10-year-anniversary-celebration'
 
-    fetch(event_site_url).then(function (response){
-        if (response.ok) {
-         response.json().then(function (data){
-             displayEvent(data);
-         })
-        }
-    })
+//     fetch(event_site_url).then(function (response){
+//         if (response.ok) {
+//          response.json().then(function (data){
+//              displayEvent(data);
+//          })
+//         }
+//     })
 
-}
+// }
+
+getEvents()
 
 var displayEvent = function(){
 
