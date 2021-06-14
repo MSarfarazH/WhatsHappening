@@ -26,21 +26,21 @@ var getEvents = function(){
 
  
 /// Singular Event Data ///
-var getEvent = function(){
+// var getEvent = function(){
     
      
-    fetch( corsApiUrl +'https://api.yelp.com/v3/events/san-francisco-yelp-10-year-anniversary-celebration', {
-    method: 'GET',
-    headers: new Headers({
-        'Authorization': 'Bearer 4FnW2xv5cVqRkDlYYF14_XYL6MmRVN661ctTKgsXOnD5ihmrJ2hqvCoMu0ItSgRlvByZexlvH8QeKxo6XZ8BUvgQolMKmUmsv1ijEsLLdK34XvK0rYqscbmy9wDAYHYx',
-        // "Content-type": "application/json"
-    })
+//     fetch( corsApiUrl +'https://api.yelp.com/v3/events/san-francisco-yelp-10-year-anniversary-celebration', {
+//     method: 'GET',
+//     headers: new Headers({
+//         'Authorization': 'Bearer 4FnW2xv5cVqRkDlYYF14_XYL6MmRVN661ctTKgsXOnD5ihmrJ2hqvCoMu0ItSgRlvByZexlvH8QeKxo6XZ8BUvgQolMKmUmsv1ijEsLLdK34XvK0rYqscbmy9wDAYHYx',
+//         // "Content-type": "application/json"
+//     })
     
-    })
-    .then(response => response.json())
-    .then(data => console.log(data));
+//     })
+//     .then(response => response.json())
+//     .then(data => console.log(data));
 
-}
+// }
 
 var displayEvents = function(events){
     if( events.length === 0 ){
@@ -50,12 +50,34 @@ var displayEvents = function(events){
     
 }
 
+for (var i = 0; i < events.length; i++){
+    var eventsEl = document.createElement('a');
+    eventsEl.classList = 'list-item flex-row justify-space-between align-center';
+    eventsEl.setAttribute("href", events[i].image_url )
+
+    var titleEl = document.createElement('span');
+    titleEl.textContent = issues[i].title;
+    eventsEl.appendChild(titleEl);
+
+    var typeEl = document.createElement('span');
+
+if (events[i].pull_request){
+    typeEl.textContent = 'Pull request';
+} else {
+    typeEl.textContent = ' Events '; 
+}
+
+    eventsEl.appendChild(typeEl);
+
+    eventsContainerEl.appendChild(eventsEl);
+ }
 
 
 
 
 
-getEvent()
+
+// getEvent()
 
 getEvents()
 
