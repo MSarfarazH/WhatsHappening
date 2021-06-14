@@ -4,6 +4,7 @@ console.log("Hello World")
 const corsApiUrl = 'https://cors-anywhere.herokuapp.com/'
 
 
+var eventsContainerEl = document.querySelector("#events-container");
 
 var EventNameEl = document.querySelector('#event-name');
 
@@ -41,10 +42,21 @@ var getEvent = function(){
 
 }
 
+var displayEvents = function(events){
+    if( events.length === 0 ){
+        eventsContainerEl.textContent = "There are no events in your area";
+        return;
+    }
+    
+}
+
+
+
+
+
+
 getEvent()
 
 getEvents()
 
-var displayEvent = function(){
 
-}
