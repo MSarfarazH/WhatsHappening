@@ -22,5 +22,15 @@ body {
     }  
 .leadOne {
     color: blanchedalmond; 
-    font-size: 30px;
+    font-size: 40px;
 }      
+
+.callout {
+    background-color: lightgrey;
+}
+
+.lead {
+    color: rgb(42, 19, 173);
+    font-size: 30px;
+    text-align: center;
+}
