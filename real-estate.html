@@ -29,11 +29,11 @@
         <div class="row">
           <div class="small-12 columns">
             <label>Search by Zip Code
-              <input type="text" placeholder="78210">
+              <input type="text" id="zipInput" placeholder="78210">
             </label>
           </div>
           
-            <button type="submit" class="button">Search Now!</button>
+            <button type="submit" class="button" id="submitBtn">Search Now!</button>
           </div>
         </div>
       </form>
@@ -53,20 +53,20 @@
 <div class="row small-up-1 medium-up-2 large-up-3">
   <div class="column">
     <div class="callout">
-      <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of event one"></p>
-      <p class="lead">Event One</p>
+      <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of event one" id="firstImg"></p>
+      <p class="lead" id="eventOne">Event One</p>
     </div>
   </div>
   <div class="column">
     <div class="callout">
       <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of event two"></p>
-      <p class="lead">Event Two</p>
+      <p class="lead" id="eventTwo">Event Two</p>
     </div>
   </div>
   <div class="column">
     <div class="callout">
       <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of event three"></p>
-      <p class="lead">Event Three</p>
+      <p class="lead" id="eventThree">Event Three</p>
     </div>
   </div>
  
@@ -91,6 +91,7 @@
       <ul class="menu float-right">
         <li class="menu-text">Copyright</li>
       </ul>
+
     </div>
   </div>
 
@@ -101,6 +102,6 @@
     <script>
       $(document).foundation();
     </script>
-    <script src="script.js"></script>
+     <script src="./script.js"></script>
   </body>
 </html>
