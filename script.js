@@ -16,7 +16,7 @@ var getEvents = function(){
     fetch( corsApiUrl +'https://api.yelp.com/v3/events?location='+zipCode, {
     method: 'GET',
     headers: new Headers({
-        'Authorization': 'Bearer 4FnW2xv5cVqRkDlYYF14_XYL6MmRVN661ctTKgsXOnD5ihmrJ2hqvCoMu0ItSgRlvByZexlvH8QeKxo6XZ8BUvgQolMKmUmsv1ijEsLLdK34XvK0rYqscbmy9wDAYHYx',
+        'Authorization': 'Bearer 4FnW2xv5cVqRkDlYYF14_XYL6MmRVN661ctTKgsXOnD5ihmrJ2hqvCoMu0ItSgRlvByZexlvH8QeKxo6XZ8BUvgQoljs MKmUmsv1ijEsLLdK34XvK0rYqscbmy9wDAYHYx',
         // "Content-type": "application/json"
     })
     })
