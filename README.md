@@ -6,7 +6,7 @@ Looking for the coolest events in your area??? What's Happening is a simple Web-
 - Click in search bar and enter a zip code
 - Three trending events in your area will appear
 ## API Used
-Yelp
+Yelp fusion
 ## Built With
 - HTML
 - CSS
