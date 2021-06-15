@@ -15,5 +15,6 @@ Yelp
 ## screen Shot 
 ![screenshot](./images/whatshappeningimage.PNG)
 ## Links
-https://github.com/MSarfarazH/WhatsHappeningEventFinder
+repository: https://github.com/MSarfarazH/WhatsHappeningEventFinder
+Github Pages: https://msarfarazh.github.io/WhatsHappeningEventFinder/
 
